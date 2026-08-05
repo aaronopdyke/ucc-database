@@ -4,7 +4,7 @@ Unit construction cost (UCC) values for 215 countries and territories, compiled
 from the [GEM Global Exposure Model](https://github.com/gem/global_exposure_model)
 into three lookup lists and an interactive world map.
 
-**Browse the data and map: <https://aaronopdyke.github.io/UCC-database/>**
+**Browse the data and map: <https://aaronopdyke.github.io/ucc-database/>**
 
 UCC is the average **replacement cost per square metre of built floor area
 (USD/m²)** — structural + non-structural components, excluding contents — as
@@ -34,7 +34,7 @@ UCC_USD_PER_SQM, GEM_COMMIT`.
 
 ## The map
 
-The [site](https://aaronopdyke.github.io/UCC-database/) plots UCC as a world
+The [site](https://aaronopdyke.github.io/ucc-database/) plots UCC as a world
 choropleth with a **country (ADM0) ⇄ admin-1 (ADM1) toggle** and an occupancy
 selector, plus a per-country browser with sortable ADM1/taxonomy tables and CSV
 downloads. Boundaries are the
@@ -76,4 +76,4 @@ If you use these values, cite the underlying model:
 
 and this compilation as: Opdyke, A. *UCC Database — unit construction costs
 from the GEM Global Exposure Model.*
-<https://aaronopdyke.github.io/UCC-database/>
+<https://aaronopdyke.github.io/ucc-database/>

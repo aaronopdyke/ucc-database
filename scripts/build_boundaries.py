@@ -27,7 +27,7 @@ import config
 from overrides import (ADM0_FROM_ADM1, ADM0_OVERRIDES, ADM1_GROUP_OVERRIDES,
                        ADM1_OVERRIDES)
 
-HEADERS = {"User-Agent": "UCC-database-build/1.0 (github.com/aaronopdyke/UCC-database)"}
+HEADERS = {"User-Agent": "UCC-database-build/1.0 (github.com/aaronopdyke/ucc-database)"}
 
 # Candidate property names, checked in order (WB field naming varies by layer).
 ADM0_CODE_FIELDS = ["ISO_A3", "WB_A3", "ADM0CD", "ISO3", "ADM0_A3"]
