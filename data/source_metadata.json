@@ -1,8 +1,8 @@
 {
-  "generated_utc": "2026-07-09T18:24:12Z",
+  "generated_utc": "2026-10-02T10:36:01Z",
   "gem": {
     "repo": "https://github.com/gem/global_exposure_model",
-    "commit": "c3add51f4e56f9d10477c8f6b5e24fd89fe089a1",
+    "commit": "e2a74b9ff5c85ee8f1ab8bfd571f3662c28dea30",
     "license": "CC BY-NC-SA 4.0",
     "citation": "Yepes-Estrada, C., Calderon, A., Costa, C., Crowley, H., Dabbeek, J., Hoyos, M.C., Martins, L., Paul, N., Rao, A., Silva, V. (2023). Global Building Exposure Model for Earthquake Risk Assessment. Earthquake Spectra, 39(4). https://doi.org/10.1177/87552930231194048"
   },
