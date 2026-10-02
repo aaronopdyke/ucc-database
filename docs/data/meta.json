@@ -1,9 +1,9 @@
 {
- "generated_utc": "2026-07-09T18:24:12Z",
+ "generated_utc": "2026-10-02T10:36:01Z",
  "cost_year": 2024,
  "gem_cost_ref_year": 2024,
  "cpi_factor": 1.0,
- "gem_commit": "c3add51f4e56f9d10477c8f6b5e24fd89fe089a1",
+ "gem_commit": "e2a74b9ff5c85ee8f1ab8bfd571f3662c28dea30",
  "gem_repo": "https://github.com/gem/global_exposure_model",
  "counts": {
   "countries": 215,
