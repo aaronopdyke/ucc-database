@@ -12,6 +12,31 @@ const UCC = {
     NONRES: "Non-residential",
   },
 
+  // CARTO basemap key (https://carto.com/basemaps/apikey). It ships in every
+  // tile URL, so it is public by design; restrict it to this site's domain in
+  // the CARTO dashboard. Without a valid key CARTO serves watermarked tiles.
+  CARTO_KEY: "cb1_4log_1_5afcc37ed146da738507be13",
+
+  // Light, label-free CARTO raster basemap shared by every map on the site.
+  basemapStyle() {
+    return {
+      version: 8,
+      sources: {
+        basemap: {
+          type: "raster",
+          tiles: [`https://basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png?key=${UCC.CARTO_KEY}`],
+          tileSize: 256,
+          attribution: "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors &copy; <a href=\"https://carto.com/attributions\">CARTO</a>",
+        },
+      },
+      layers: [
+        { id: "bg", type: "background", paint: { "background-color": "#f9f9f7" } },
+        { id: "basemap", type: "raster", source: "basemap",
+          paint: { "raster-opacity": 0.85 } },
+      ],
+    };
+  },
+
   fmtInt: new Intl.NumberFormat("en-US", { maximumFractionDigits: 0 }),
   fmtUcc: new Intl.NumberFormat("en-US", { maximumFractionDigits: 0 }),
 

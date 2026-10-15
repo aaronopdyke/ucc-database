@@ -232,22 +232,7 @@
     if (mapReady) return mapReady;
     countryMap = new maplibregl.Map({
       container: "country-map",
-      style: {
-        version: 8,
-      sources: {
-        basemap: {
-          type: "raster",
-          tiles: ["https://basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png"],
-          tileSize: 256,
-          attribution: "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors &copy; <a href=\"https://carto.com/attributions\">CARTO</a>",
-        },
-      },
-      layers: [
-        { id: "bg", type: "background", paint: { "background-color": "#f9f9f7" } },
-        { id: "basemap", type: "raster", source: "basemap",
-          paint: { "raster-opacity": 0.85 } },
-      ],
-      },
+      style: UCC.basemapStyle(),
       attributionControl: false,
     });
     countryMap.addControl(new maplibregl.NavigationControl({ showCompass: false }), "top-right");

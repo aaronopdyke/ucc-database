@@ -30,22 +30,7 @@
   // ---- map ----
   const map = new maplibregl.Map({
     container: "map",
-    style: {
-      version: 8,
-      sources: {
-        basemap: {
-          type: "raster",
-          tiles: ["https://basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png"],
-          tileSize: 256,
-          attribution: "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors &copy; <a href=\"https://carto.com/attributions\">CARTO</a>",
-        },
-      },
-      layers: [
-        { id: "bg", type: "background", paint: { "background-color": "#f9f9f7" } },
-        { id: "basemap", type: "raster", source: "basemap",
-          paint: { "raster-opacity": 0.85 } },
-      ],
-    },
+    style: UCC.basemapStyle(),
     center: [12, 22],
     zoom: 1.4,
     minZoom: 0.6,
